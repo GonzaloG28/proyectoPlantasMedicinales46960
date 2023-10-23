@@ -1,10 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Gabarito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*paleta de colores
+
+#8ab446 bordes
+#072a16
+#2d6b22
+#acc864
+#d3e29d
+
+*/
+
 .contenedor_nav{
     display: flex;
     justify-content: right;
     width: 100%;
+    .link_nav{
+        color: #2d6b22;
+        font-size: large;
+        margin-left: 10px;
+    }
+}
+
+.contenedor_nav .link_nav:hover{
+    background-color: #acc864;
+    border-radius: 15px;
+    color: #072a16;
+    padding-left: 15px;
+}
+
+@media (max-width: 991px){
+        .link_nav{
+            width: 40%
+        }
+    
 }
 
 .header_nav{
-    width: 100%;
-    
+    margin: 0 auto;
+    width: 95%;
+    border-bottom: #8ab446 solid 3px;
+}
+
+.header_nav{
+    .icono_hamburguesa{
+        background-image: url(../assets/img/menu.png);
+    }
+}
+
+.logo_nav{
+    height: 30px;
+    margin-left: 10px;
 }
