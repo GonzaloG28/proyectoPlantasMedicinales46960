@@ -36,7 +36,7 @@
 
 @media (max-width: 991px){
         .link_nav{
-            width: 40%
+            width: 50%
         }
     
 }
@@ -56,4 +56,98 @@
 .logo_nav{
     height: 30px;
     margin-left: 10px;
+}
+
+
+
+/*aqui va todo lo que tiene que ver con la pagina de plantas Medicinales*/
+
+@media (max-width: 700px){
+    *{
+        font-size: x-small;
+    }
+}
+
+.titulo_plantas{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main_plantas .imagen_plantaPrincipal{
+    width: 100%;
+    height: 750px;
+}
+
+@media (max-width: 991px){
+    .main_plantas .imagen_plantaPrincipal{
+        height: 350px;
+    }
+}
+
+.main_plantas{
+    width: 100%;
+}
+
+.main_plantas .section_plantas{
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 1280px){
+    .main_plantas .contenedor_plantas{
+        width: 100%;
+        grid-template-rows: 1 / -1;
+    }
+}
+
+@media (max-width: 1280px){
+    .aside_plantas{
+        display: none;
+    }
+}
+
+
+.subtitulo_plantas{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 130px;
+    width: 60%;
+}
+
+.descripcion_planta{
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    border-bottom: #072a16 solid 2px;
+}
+
+.aside_plantas{
+    height: 700px;
+}
+
+.contenedor_preguntas{
+    height: 700px;
+    overflow-y: auto;
+}
+
+.contenedor_preguntas p{
+    margin-bottom: 80px;
+}
+
+.aside_plantas .subtitulo_preguntas{
+    margin-top: 100px;
+}
+
+.imagen_planta{
+    width: 200px;
+}
+
+@media (max-width: 991px){
+    .imagen_planta{
+        width: 100px;
+        height: 100px;
+    }
 }
