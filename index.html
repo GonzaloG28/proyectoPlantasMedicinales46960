@@ -31,43 +31,83 @@
                 </div>
               </nav>
         </header>   
-        <main>
-                    <!-- aca va informacion principal sobre las plantas con algunas imagenes, la idea es que las imagenes queden como carrusel-->
-
-            <section class="info1">
-                    <h1>Planti Med</h1>
-            <div class="contenedorInfo1">
-                <article class="pinfo1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos s amet consectetur, adipisicing elit. Eos porro fugit veritatis corrupti distinctio esse! Maxime, aliquam architecto numquam aliquid suscipit nihil, beatae perspiciatis veniam quos distinctio fugit deleniti ipsum</p>
-                </article>
-                <article class="pinfo1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos s amet consectetur, adipisicing elit. Eos porro fugit veritatis corrupti distinctio esse! Maxime, aliquam architecto numquam aliquid suscipit nihil, beatae perspiciatis veniam quos distinctio fugit deleniti ipsum</p>
-                </article>
-            </div>
         
-            </section>
+        
+        <main class="main_inicio">
+                    <!-- aca va informacion principal sobre las plantas con algunas imagenes, la idea es que las imagenes queden como carrusel-->
+            <section>
+                <div class="container contenedor_titulo_inicio">
+                    <div class="row">
+                        <div class="container-fluid col-6 titulo_inicio_lupa">
+                            <h1>Planti Med</h1>
+                        </div>
+                        <div class="container-fluid col-6 buscador_inicio titulo_inicio_lupa">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit"><img src="./assets/img/lupa.png" alt="buscador"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 columna_titulo_inicio">
+                            <h4 class="parrafo_titulo_incio">Bienvenidos a Planti Med, tu fuente definitiva de conocimiento sobre plantas medicinales y su impacto en la salud y el bienestar. </h4>
+                        </div>
+                        <div class="col-6 columna_titulo_inicio">
+                            <h4 class="parrafo_titulo_incio">Descubre los tesoros de la naturaleza y explora el maravilloso mundo de las plantas medicinales y su potencial para mejorar nuestras vidas.</h4>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="imgInfo1">
-                <a href="../preEntrega1_GonzaloGimenezBriones_46960/pages/plantasMedicinales.html"><img src="../preEntrega1_GonzaloGimenezBriones_46960/assets/img/assortment-ginger-wooden-board.jpg" alt="imagenPlanta"></a>
-                <a href="../preEntrega1_GonzaloGimenezBriones_46960/pages/plantasMedicinales.html"><img src="../preEntrega1_GonzaloGimenezBriones_46960/assets/img/lavender-plants-growing-field.jpg" alt="imagenPlanta"></a>
-                <a href="../preEntrega1_GonzaloGimenezBriones_46960/pages/plantasMedicinales.html"><img src="../preEntrega1_GonzaloGimenezBriones_46960/assets/img/vertical-selective-focus-field-beautiful-chamomiles.jpg" alt="imagenPlanta"></a>
-            </div>
+                <div id="carouselExampleInterval" class="carousel slide contenedor_carrusel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <a href="./pages/plantasMedicinales.html"><img src="./assets/img/imagenLavanda.jpg" class="d-block w-100" alt="Imagen Lavanda"></a>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <a href="./pages/plantasMedicinales.html"><img src="./assets/img/imagenJengibre.jpg" class="d-block w-100" alt="Imagen Jengibre"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./pages/plantasMedicinales.html"><img src="./assets/img/ImagenBoldo.jpg" class="d-block w-100" alt="Imagen Boldo"></a>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
 
             <!-- aca van imagenes con enlaces para poder ingresar a cada categoria de  las plantas medicinales correspondientes -->
+            
+                <div class="container contenedor_principal_categorias">
+                    <div class="row">
+                    
+                    <div class="container col-6">
+                        <div class="row row-cols-2 contenedor_categorias_imagenes">
+                          <div class="col categoria_imagenes"><a href="" class=""><img src="./assets/img/analgesica.jpg" alt=""><h6>ANALGESICAS</h6></a></div>
+                          <div class="col categoria_imagenes"><a href="" class=""><img src="./assets/img/antidiabetica.jpg" alt=""><h6>ANTIDIABETICAS</h6></a></div>
+                          <div class="col categoria_imagenes"><a href="" class=""><img src="./assets/img/antiinflamatorias.jpg" alt=""><h6>ANTIINFLAMATORIAS</h6></a></div>
+                          <div class="col categoria_imagenes"><a href="" class=""><img src="./assets/img/calmante.jpg" alt=""><h6>CALMANTES</h6></a></div>
+                        </div>
+                      </div>
+    
+                        <div class="col-6 contenedor_descripcion_categorias">
+                           <div class="descripcion_categorias">
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-sm-6"><h2>Categorias</h2></div>
+                                  <div class="col-sm-6"><a class="btn btn-primary boton_categorias" href="./pages/categorias.html" role="button"><img src="./assets/img/flecha-derecha.png" alt=""></a></div>
+                                </div>
+                            <h5>conoce como se categorizan las plantas</h5>
+                           </div>
+                        </div>
 
-            <section class="sectionCategorias">
-                <div class="contenedorCategorias">
-                    <a href="../preEntrega1_GonzaloGimenezBriones_46960/pages/categorias.html"><img src="../preEntrega1_GonzaloGimenezBriones_46960/favicon.ico" alt="categorias"></a>
-                    <a href="../preEntrega1_GonzaloGimenezBriones_46960/pages/categorias.html"><img src="../preEntrega1_GonzaloGimenezBriones_46960/favicon.ico" alt="categorias"></a>
-                    <a href="../preEntrega1_GonzaloGimenezBriones_46960/pages/categorias.html"><img src="../preEntrega1_GonzaloGimenezBriones_46960/favicon.ico" alt="categorias"></a>
-                    <a href="../preEntrega1_GonzaloGimenezBriones_46960/pages/categorias.html"><img src="../preEntrega1_GonzaloGimenezBriones_46960/favicon.ico" alt="categorias"></a>
-                </div>
-                <div class="contenedorCategorias2">
-                    <h2>Categorias</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quod quam consectetur ipsa tempore consequuntur itaque?</p>
+                    </div>
                 </div>
             </section>
-
             <!-- En esta parte quize agregar una seccion donde se muestran preguntas con sus respectivas respuestas sobre consultas del uso de las plantas-->
 
             <section class="sectionPreguntasInicio">
@@ -88,15 +128,15 @@
              <!-- Este es el pie de pagina, donde tiene un sobre nosotros que nos envia a la seccion de contactos y aparte tiene tres enlaces que te llevan a la red social correspondiente que lo agregare mas tarde-->
 
         <footer class="footer">
-            <div class="contenedorFooter">
-                <a href="./pages/contacto.html" class="sobrenosotros">SOBRE NOSTROS</a>
-            <div class="contenedorlinks">
-                <a class="redsocial" href="http://" target="_blank" rel="noopener noreferrer"><i>IG</i></a>
-            <a class="redsocial" href="http://" target="_blank" rel="noopener noreferrer"><i>IG</i></a>
-            <a class="redsocial" href="http://" target="_blank" rel="noopener noreferrer"><i>IG</i></a>
+            <div class="footer_contacto">
+                <a href="./pages/contacto.html">SOBRE NOSOTROS</a>
             </div>
+            <div class="footer_social">
+                <a href="#"><img src="./assets/img/instagram.png" alt=""></a>
+                <a href="#"><img src="./assets/img/facebook.png" alt=""></a>
+                <a href="#"><img src="./assets/img/github.png" alt=""></a>
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
     </body>
 </html>
