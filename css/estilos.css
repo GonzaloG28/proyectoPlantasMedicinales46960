@@ -118,7 +118,7 @@
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 992px){
     .main_inicio .contenedor_carrusel{
         display: none;
     }
@@ -196,6 +196,9 @@
     margin-top: 70px;
     margin-left: 150px;
 }
+
+
+
 
 /*aqui va todo lo que tiene que ver con la pagina de plantas Medicinales*/
 
