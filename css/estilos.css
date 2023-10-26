@@ -109,16 +109,14 @@
     border-bottom: #d3e29d solid 5px;
 }
 
-@media (max-width: 992px){
-    .main_inicio .contenedor_carrusel{
-        width: 400px;
-    }
-    .contenedor_titulo_inicio{
-        margin-top: 90px;
-    }
-}
+
 
 @media (max-width: 992px){
+    .contenedor_titulo_inicio{
+        margin-top: 90px;
+        padding-bottom: 40px;
+        border-bottom: #8ab446 solid 2px;
+    }
     .main_inicio .contenedor_carrusel{
         display: none;
     }
@@ -136,29 +134,27 @@
         width: 100%;
         margin-bottom: 20px;
     }
+
     .contenedor_titulo_inicio .titulo_inicio_lupa{
-        width: 50%;
-        margin: 0 auto;
-        grid-template-rows: 1fr;
         text-align: center;
     }
 
-    .contenedor_titulo_inicio .buscador_inicio{
+    .contenedor_titulo_inicio .buscador_inicio{ 
         display: none;
     }
 
 }
 
-.contenedor_titulo_inicio .buscador_inicio{
+.contenedor_titulo_inicio .buscador_inicio{ 
     width: 40%;
 
 }
 
 /*aqui va todo lo que tiene que ver con las categorias del index*/
 
+
 .descripcion_categorias{
-    margin: auto 0;
-    height: 50%;
+    text-align: center;
 }
 
 .contenedor_categorias_imagenes img{
@@ -174,6 +170,19 @@
     text-decoration: none;
 }
 
+.descripcion_categorias .boton_categorias{
+    background-color: #8ab446;
+}
+
+.descripcion_categorias .boton_categorias:hover{
+    border-radius: 10px;
+    background-color: #acc864;
+}
+
+.contenedor_descripcion_categorias .container{
+    width: 100%;
+    height: 100%;
+}
 
 .contenedor_categorias_imagenes{
     text-align: center;
@@ -193,12 +202,44 @@
 }
 
 .descripcion_categorias{
-    margin-top: 70px;
     margin-left: 150px;
 }
 
+.descripcion_categorias h5{
+    margin-top: 30px;
+}
 
+@media (max-width: 992px){
+    .contenedor_principal_categorias{
+        margin-top: 40px;
+    }
 
+    .contenedor_principal_categorias .contenedor_categorias_imagenes h6{
+        width: 100%;
+    }
+
+    .contenedor_principal_categorias .contenedor_descripcion_categorias{
+        grid-template-rows: 1fr;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .contenedor_descripcion_categorias h5{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor_principal_categorias .contenedor_categorias_secundario{
+        grid-template-rows: 1fr;
+        width: 65%;
+    }
+
+    .descripcion_categorias .boton_categorias img{
+        width: 50%;
+    }
+}
 
 /*aqui va todo lo que tiene que ver con la pagina de plantas Medicinales*/
 
