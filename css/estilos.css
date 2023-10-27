@@ -66,20 +66,42 @@
 .footer{
     display: flex;
     justify-content:space-between;
-    width: 95%;
     height: 60px;
+    width: 95%;
     border-top: #d3e29d solid 3px;;
     margin: 0 auto;
 }
 
 .footer_contacto{
     vertical-align: middle;
+    height: 50%;
+    margin: auto 0;
 }
 
 .footer_contacto a{
-    text-decoration: none;
+    text-decoration:double;
+    color: #072a16;
 }
 
+.footer_social{
+    height: 50%;
+    margin: auto 0;
+}
+
+.footer_contacto a:hover{
+    color:#2d6b22;
+}
+
+.footer_social a{
+    margin-left: 10px;
+}
+
+@media (max-width: 992px){
+    .footer_contacto a{
+        font-size: small;
+        height: 100%;
+    }
+}
 
 /*aqui va todo el estilo del inicio del index*/
 
@@ -101,21 +123,24 @@
 }
 
 .main_inicio .contenedor_carrusel{
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 40px;
     padding: 20px;
-    border-bottom: #d3e29d solid 5px;
+    border-bottom: #161616 solid 5px;
 }
 
+.main_inicio .plantas_medicinales_inicio{
+    margin-top: 200px;
+    text-align: center;
+}
 
+.contenedor_principal_carrusel{
+    margin-top: 50px;
+}
 
 @media (max-width: 992px){
     .contenedor_titulo_inicio{
         margin-top: 90px;
-        padding-bottom: 40px;
-        border-bottom: #8ab446 solid 2px;
     }
     .main_inicio .contenedor_carrusel{
         display: none;
@@ -143,6 +168,15 @@
         display: none;
     }
 
+    .contenedor_principal_carrusel .plantas_medicinales_inicio{
+        margin-top: auto;
+    }
+
+    .main_inicio .contenedor_principal_carrusel{
+        margin-top: 40px;
+        border-bottom: #8ab446 solid 2px;
+        padding-bottom: 40px;
+    }
 }
 
 .contenedor_titulo_inicio .buscador_inicio{ 
@@ -150,15 +184,20 @@
 
 }
 
+.plantas_medicinales_inicio .boton_inicio{
+    background-color:#2d6b22;
+    color: #acc864;
+}
+
+.plantas_medicinales_inicio .boton_inicio:hover{
+    background-color: #8ab446;
+}
+
 /*aqui va todo lo que tiene que ver con las categorias del index*/
 
 
 .descripcion_categorias{
     text-align: center;
-}
-
-.contenedor_categorias_imagenes img{
-    width: 100%;
 }
 
 
@@ -177,11 +216,6 @@
 .descripcion_categorias .boton_categorias:hover{
     border-radius: 10px;
     background-color: #acc864;
-}
-
-.contenedor_descripcion_categorias .container{
-    width: 100%;
-    height: 100%;
 }
 
 .contenedor_categorias_imagenes{
@@ -211,7 +245,9 @@
 
 @media (max-width: 992px){
     .contenedor_principal_categorias{
-        margin-top: 40px;
+        margin-top: 60px;
+        border-bottom: #2d6b22 solid 2px;
+        padding-bottom: 20px;
     }
 
     .contenedor_principal_categorias .contenedor_categorias_imagenes h6{
@@ -219,7 +255,6 @@
     }
 
     .contenedor_principal_categorias .contenedor_descripcion_categorias{
-        grid-template-rows: 1fr;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -240,6 +275,34 @@
         width: 50%;
     }
 }
+
+/*aqui va todo lo de la seccion de preguntas del inicio*/
+
+.contenedor_preguntas_inicio{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border: #acc864 solid 4px;
+    border-radius: 10px;
+}
+
+.contenedor_preguntas_inicio a{
+    background-color: #8ab446;
+}
+
+.contenedor_preguntas_inicio a:hover{
+    background-color: #acc864;
+    color: #072a16;
+}
+
+@media (max-width: 700px){
+    .contenedor_preguntas_inicio p{
+        font-size: small;
+    }
+}
+
 
 /*aqui va todo lo que tiene que ver con la pagina de plantas Medicinales*/
 
