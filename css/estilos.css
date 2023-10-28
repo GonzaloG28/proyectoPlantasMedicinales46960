@@ -375,12 +375,8 @@
     overflow-y: auto;
 }
 
-.contenedor_preguntas p{
-    margin-bottom: 80px;
-}
-
-.aside_plantas .subtitulo_preguntas{
-    margin-top: 100px;
+.contenedor_preguntas h4{
+    margin-top: 40px;
 }
 
 .imagen_planta{
@@ -408,4 +404,34 @@
 
 .section_categoria img{
     width: 200px;
+}
+
+/*aca va todo lo que tiene que ver con la pagina de preguntas frecuentes*/
+
+.titulo_preguntas{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contenedor_preguntas_frecuentes{
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 20px;
+    border: #8ab446 solid 10px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.contenedor_preguntas_frecuentes article{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-bottom: #d3e29d solid 2px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.contenedor_preguntas_frecuentes article p{
+    font-size:larger ;
 }
