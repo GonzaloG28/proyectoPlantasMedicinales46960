@@ -276,7 +276,7 @@
     }
 }
 
-/*aqui va todo lo de la seccion de preguntas del inicio*/
+/*aqui va todo lo de la seccion de preguntas del index*/
 
 .contenedor_preguntas_inicio{
     width: 85%;
@@ -345,13 +345,11 @@
         width: 100%;
         grid-template-rows: 1 / -1;
     }
-}
-
-@media (max-width: 1280px){
     .aside_plantas{
         display: none;
     }
 }
+
 
 
 .subtitulo_plantas{
@@ -394,4 +392,20 @@
         width: 100px;
         height: 100px;
     }
+}
+
+/*aqui va todo lo que tiene que ver con la pagina de Categorias*/
+
+.imagen_planta_categoria{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section_categoria .contenedor_categoria{
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.section_categoria img{
+    width: 200px;
 }
