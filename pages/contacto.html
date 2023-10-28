@@ -28,27 +28,38 @@
               </nav>
         </header>
         
-        <main>
+        <main class="main_contacto">
             <!-- Aca va la zona de contacto que tiene informacion mia junto a un mapa y la opcion de poder enviar un dato o alguna consulta o algun reclamo -->
-            <div>
-                <h1>CONTACTANOS</h1>
-                <div>
-                    <p>nombre creador pagina</p>
-                    <p>numero telefono</p>
-                    <p>ubicacion</p>
+        <div class="container contenedor_contacto">
+            <h1>CONTACTANOS</h1>
+            <div class="row datos_contacto">
+              <div class="col-6">
+                <div class="">
+                    <p>Nombre: Gonzalo Gimenez</p>
+                    <p>Telefono: +56 9 555 555</p>
+                    <p>Ubicacion: Chile</p>
                 </div>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233941.08487068757!2d-70.40472860000001!3d-23.628369800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96a58a1999656469%3A0x9fbe15f44d1e6f96!2sAntofagasta!5e0!3m2!1ses!2scl!4v1696626946456!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div>
-                    <form action="">
-                        <input type="text" placeholder="Nombre Completo">
-                        <input type="email" placeholder="Correo">
-                        <input type="tel" placeholder="Numero Telefono">
-                        <input type="text" placeholder="Comentario">
-                    </form>
+                <div class="mapa_contacto">
+                    <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233941.08487068757!2d-70.40472860000001!3d-23.628369800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96a58a1999656469%3A0x9fbe15f44d1e6f96!2sAntofagasta!5e0!3m2!1ses!2scl!4v1696626946456!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+                <div class="col-6 contenedor_formulario">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Apellido">
+                      </div>
+                      <div class="mb-3">
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="9 555 555">
+                      </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@gmail.com">
+                      </div>
+                      <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribre aqui" rows="3"></textarea>
+                      </div>
+                      <input class="btn boton_enviar" type="submit" value="enviar">
+                </div>
+            </div>
+        </div>
         </main>
         <footer class="footer">
             <div class="footer_contacto">
