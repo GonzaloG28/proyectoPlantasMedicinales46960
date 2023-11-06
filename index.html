@@ -11,6 +11,7 @@
     </head>
     <body>
 
+
             <!-- Esta es la parte de la navegacion -->
         <header>
             <nav class="navbar navbar-expand-lg header_nav">
@@ -25,7 +26,6 @@
                       <a class="nav-link link_nav" href="./pages/plantasMedicinales.html">Plantas Medicinales</a>
                       <a class="nav-link link_nav" href="./pages/categorias.html">Categorias</a>
                       <a class="nav-link link_nav" href="./pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                      <a class="nav-link link_nav" href="./pages/contacto.html">Contacto</a>
                       <a class="nav-link link_nav" href="./pages/contacto.html">Contacto</a>
                     </div>
                   </div>
@@ -62,14 +62,14 @@
 
             <div class="container contenedor_principal_carrusel">
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 boton_plantas">
                   <div class="plantas_medicinales_inicio">
                     <div><h2>Plantas Medicinales</h2></div>
                    <div><a class="btn boton_inicio" href="./pages/plantasMedicinales.html" role="button">Conocer</a></div>
                   </div>  
                </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-6 boton_plantas">
                   <div id="carouselExampleInterval" class="carousel slide contenedor_carrusel w-100" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="10000">
@@ -101,25 +101,60 @@
                   <div class="row">
 
                     <div class="col-6 contenedor_descripcion_categorias">
-                      <div class="">
                        <div class="container w-100 descripcion_categorias">
                             <div class="row">
-                              <div class="col-sm-8 col-8"><h2>CATEGORIAS</h2></div>
-                              <div class="col-sm-4 col-4"><a class="btn boton_categorias" href="./pages/categorias.html" role="button"><img src="./assets/img/flecha-derecha.png" alt="boton"></a></div>
+                              <h2>CATEGORIAS</h2>
                             </div>
-                              <h5>Descubre le extenso catalogo de categorias de plantas medicinales, aquí encontrarás todo lo que necesitas para cuidar de tu salud de manera natural.  </h5>
+                              <p>Descubre le extenso catalogo de categorias de plantas medicinales, aquí encontrarás todo lo que necesitas para cuidar de tu salud de manera natural.  </p>
+                              <a class="btn boton_categorias" href="./pages/categorias.html" role="button">Descubre</a>
                         </div>
                       </div>
-                   </div>
                     
-                    <div class="container col-6 contenedor_categorias_secundario">
-                        <div class="row row-cols-2 contenedor_categorias_imagenes">
-                          <div class="col categoria_imagenes"><a href="./pages/categorias.html"><img class="w-100" src="./assets/img/analgesica.jpg" alt="analgesicas"><h6 class="w-100">ANALGESICAS</h6></a></div>
-                          <div class="col categoria_imagenes"><a href="./pages/categorias.html"><img class="w-100" src="./assets/img/antidiabetica.jpg" alt="antidiabeticas"><h6 class="w-100">ANTIDIABETICAS</h6></a></div>
-                          <div class="col categoria_imagenes"><a href="./pages/categorias.html"><img class="w-100" src="./assets/img/antiinflamatorias.jpg" alt="antiinflamatorias"><h6 class="w-100">ANTIINFLAMATORIAS</h6></a></div>
-                          <div class="col categoria_imagenes"><a href="./pages/categorias.html"><img class="w-100" src="./assets/img/calmante.jpg" alt="calmantes"><h6 class="w-100">CALMANTES</h6></a></div>
+                 <div class="container col-6 contenedor_categorias_secundario">  
+                   <div class="row row-cols-1 row-cols-md-2 g-4 contenedor_categorias_imagenes">
+                    <div class="col">
+                      <a href="./pages/categorias.html">
+                        <div class="card h-100">
+                          <img src="./assets/img/antidiabetica.jpg" class="card-img-top" alt="antidiabetica">
+                          <div class="card-body card_categoria_inicio">
+                            <h5 class="card-title">ANTIDIABETICAS</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="./pages/categorias.html">
+                        <div class="card h-100">
+                          <img src="./assets/img/analgesica.jpg" class="card-img-top" alt="analgesicas">
+                          <div class="card-body card_categoria_inicio">
+                            <h5 class="card-title">ANALGESICAS</h5>
+                          </div>
+                        </div>
+                      </a>   
+                    </div>
+                    <div class="col">
+                      <a href="./pages/categorias.html">
+                        <div class="card h-100">
+                          <img src="./assets/img/antiinflamatorias.jpg" class="card-img-top" alt="antiinflamatoria">
+                          <div class="card-body card_categoria_inicio">
+                            <h5 class="card-title">ANTIINFLAMATORIAS</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="./pages/categorias.html">
+                        <div class="card h-100">
+                        <img src="./assets/img/calmante.jpg" class="card-img-top" alt="calmantes">
+                        <div class="card-body card_categoria_inicio">
+                          <h5 class="card-title">CALMANTES</h5>
                         </div>
                       </div>
+                    </a>
+                    </div>
+                  </div>
+                </div>   
+
     
                   </div>
                </div>
@@ -151,6 +186,7 @@
           </section>
       </main>
 
+
              <!-- Este es el pie de pagina, donde tiene un sobre nosotros que nos envia a la seccion de contactos y aparte tiene tres enlaces que te llevan a la red social correspondiente que lo agregare mas tarde-->
 
         <footer class="footer">
@@ -163,6 +199,7 @@
                 <a href="https://github.com/" target="_blank"><img src="./assets/img/github.png" alt="logo github"></a>
             </div>
         </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
     </body>
 </html>
