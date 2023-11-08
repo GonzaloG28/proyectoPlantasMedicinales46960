@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: $center;
+    align-items: $center;
+    gap: $px-10;
+    width: $por-100;
+    border-top: map-get($colores , color-quinario ) solid $px-3;
+
+    .footer_contacto{
+        height: $por-50;
+        margin-top: $px-5;
+        a{
+            text-decoration:double;
+            color: map-get($colores , color-secundario );
+            &:hover{
+                color:map-get($colores , color-terciario);
+            }
+        }
+    }
+    .footer_social{
+        height: $por-50;
+        margin-bottom: $px-5;
+        a{
+            margin: $auto $px-5;
+        }
+    }
+}
+@media (max-width: 992px){
+    .footer_contacto a{
+        font-size: map-get($fuentes , fontSmall );
+        height: $por-100;
+    }
+}
+
+

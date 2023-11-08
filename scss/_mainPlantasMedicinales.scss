@@ -1,0 +1,69 @@
+
+.main_plantas{
+    .titulo_plantas{
+        width: $por-80;
+        margin: 0 $auto;
+        text-align: $center;
+        margin-top: $px-80;
+        margin-bottom: $px-20;
+    }
+    .imagen_plantaPrincipal{
+        width: $por-100;
+        height: $por-100;
+    }
+    .subtitulo_plantas{
+        margin-left: $auto;
+        margin-right: $auto;
+        margin-top: $px-100;
+        margin-bottom: $px-100;
+        width: 70%;
+        text-align: $center;
+        border-left: map-get($colores , color-quinario) solid $px-5;
+        border-right:map-get($colores , color-quinario ) solid $px-5;
+    }
+    .section_plantas{
+        margin: 0 $auto;
+        width: $por-100;
+        .descripcion_planta{
+            margin-bottom: $px-100;
+            padding-bottom: $px-20;
+            border-bottom: map-get($colores , color-secundario ) solid $px-2;
+            .imagen_planta{
+                width: 40%;
+                height: $por-100;
+            }
+        }
+        .aside_plantas{
+            height: 700px;
+            .contenedor_preguntas{
+                height: 700px;
+                overflow-y: $auto;
+                h4{
+                    margin-top: $px-40;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px){
+
+    .main_plantas .contenedor_plantas{
+        width: $por-100;
+        grid-template-rows: 1 / -1;
+    }
+    .aside_plantas{
+        display: none;
+    }
+}
+
+@media (max-width: 991px){
+
+    .descripcion_planta{
+        width: $por-100;
+    }
+}
+
+
+
+

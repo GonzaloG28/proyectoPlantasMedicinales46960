@@ -1,0 +1,47 @@
+
+
+.main_categorias{
+
+    .section_categoria{
+        text-align: $center;
+
+        .contenedor_categoria{
+            margin-bottom: $px-80;
+            margin-top: 60px;
+            width: $por-100;
+            .imagen_planta_categoria{
+                width: $por-100;
+                display: flex;
+                justify-content: space-evenly;
+                .contenedor_imagen{
+                    width: $por-30;
+                    border-bottom: map-get($colores , color-primario ) solid $px-2;
+                    padding-bottom: $px-10;
+                    img{
+                        width: $por-100;
+                        height: $por-100;
+                    }
+                }
+            }
+            .parrafo_categorias{
+                font-size: map-get($fuentes, fontLarger);
+                width: $por-80;
+                margin: 0 $auto;
+                margin-bottom: $px-20;
+                text-align: $center;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .main_categorias .section_categoria .contenedor_categoria .parrafo_categorias{
+            font-size: map-get($fuentes, fontSmall);
+            text-align: $left;
+        }
+ }
+
+
+
+
+

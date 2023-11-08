@@ -1,0 +1,63 @@
+
+
+.main_contacto{
+    margin-bottom: $px-20;
+    height: 100vh;
+    .contenedor_contacto{
+        height: $por-100;
+        width: $por-100;
+        .titulo_contacto{
+            text-align: $center;
+            h1{
+                margin-top: $px-10;
+            }
+            h5{
+                border-bottom: map-get($colores , color-quinario ) solid $px-2;
+                width: $por-50;
+                margin: 0 $auto;
+            }
+        }
+        .datos_contacto{
+            margin-top: $px-100;
+            .mapa_contacto{
+                @extend .contenedor_contacto;
+                width: $por-50;
+            }
+        }
+        .contenedor_formulario{
+            height: $por-50;
+            margin: $auto 0;
+            .boton_enviar{
+                background-color:map-get($colores , color-primario );
+                color:map-get($colores , color-secundario );
+                &:hover{
+                    background-color: map-get($colores , color-cuaternario );
+                    color: map-get($colores , color-secundario );
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 573px){
+        .contenedor_contacto .datos_contacto{
+         text-align: $center;
+         margin-top: $px-40;
+             p{
+                 text-align:$left;
+                 width: 40%;
+                 margin: 0 $auto;
+             }
+             .contenedor_mapa_contacto{
+                 margin-bottom: $px-20;
+                }
+        }
+        .contenedor_contacto .contenedor_formulario{
+         width: $por-90;
+         margin-left: $auto;
+         margin-right: $auto;
+         margin-bottom: $px-20;
+        }
+     }
+
+
+

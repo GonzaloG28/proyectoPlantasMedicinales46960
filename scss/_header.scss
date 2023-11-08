@@ -1,0 +1,42 @@
+
+
+.header_nav{
+    margin: 0 $auto;
+    width: $por-95;
+    border-bottom: map-get($colores , color-quinario ) solid $px-3;
+
+    .logo_nav{
+        height: $px-30;
+        margin-left: $px-10;
+    }
+
+    .icono_hamburguesa{
+        background-image: url(../assets/img/menu.png);
+    }
+    
+    .contenedor_nav{
+        display: flex;
+        justify-content: $right;
+        .link_nav{
+            color: map-get($colores , color-terciario);
+            font-size: map-get($fuentes , fontLarge );
+            margin-left: $px-10;
+            padding-left: $px-15;
+            &:hover{
+                color: map-get($colores , color-secundario);
+                background-color: map-get($colores , color-primario );
+                border-radius: $px-20;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .header_nav{
+        .link_nav{
+            width: 55%;
+        }
+    }
+}
+
+

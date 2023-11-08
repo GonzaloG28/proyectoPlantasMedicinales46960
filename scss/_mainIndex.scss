@@ -1,0 +1,148 @@
+
+.main_inicio{
+    .contenedor_titulo_inicio{
+        margin-top: 130px;
+        .buscador_inicio{ 
+            width: 40%;
+        }
+        h1{
+            width: $por-90;
+            margin: 0 $auto;
+            margin-bottom: $px-90;
+            color: map-get($colores , color-primario );
+        }
+        .parrafo_titulo_inicio{
+            width: $por-80;
+            margin: 0 $auto;
+            color: map-get($colores , color-secundario );
+        }
+    }
+    .contenedor_principal_carrusel{
+        margin-top: $px-50;
+        .plantas_medicinales_inicio{
+            margin-top: 200px;
+            text-align: $center;
+            .boton_inicio{
+                background-color:#2d6b22;
+                color: map-get($colores , color-primario );
+                &:hover{
+                    background-color: map-get($colores , color-primario );
+                }
+            }
+        }
+        .contenedor_carrusel{
+            margin-top: $px-40;
+            padding: $px-20;
+            border-bottom: map-get($colores , color-secundario ) solid 5px;
+        }
+    }
+    .contenedor_principal_categorias{
+        margin-top: 300px;
+        .contenedor_descripcion_categorias{
+            .descripcion_categorias{
+                text-align: $center;
+                p{
+                    font-size: map-get($fuentes , fontLarge );
+                }
+                .boton_categorias{
+                    background-color: map-get($colores , color-primario );
+                    &:hover{
+                        border-radius: $px-10;
+                        background-color: map-get($colores , color-cuaternario );
+                    }
+                }
+            }
+        }
+        .contenedor_categorias_imagenes{
+            text-align: $center;
+            a{
+                text-decoration: none;
+                color: map-get($colores , color-secundario );
+                .card_categoria_inicio{
+                background-color:map-get($colores , color-primario );
+                color:map-get($colores , color-secundario );
+            }
+        }
+    }
+ }
+ .contenedor_preguntas_inicio{
+    width: 85%;
+    margin-left: $auto;
+    margin-right: $auto;
+    margin-top: $px-100;
+    margin-bottom: $px-40;
+    border: map-get($colores , color-cuaternario ) solid 4px;
+    border-radius: $px-10;
+    a{
+        background-color: map-get($colores , color-primario );
+        &:hover{
+            background-color: map-get($colores , color-cuaternario );
+            color: map-get($colores , color-secundario );
+        }
+    }
+}
+}
+
+@media (max-width: 992px){
+    .main_inicio{
+        .contenedor_titulo_inicio{
+            margin-top: $px-90;
+            h1{
+                width: $por-100;
+                margin-bottom: $px-20;
+            }
+            .columna_titulo_inicio{
+                grid-template-rows: 1fr;
+                width: 85%;
+                margin-left: $auto;
+                margin-right: $auto;
+                margin-bottom: $px-20;
+            }
+            .titulo_inicio_lupa{
+                text-align: $center;
+            }
+            .buscador_inicio{ 
+                display: none;
+            }
+        }
+        .contenedor_principal_carrusel{
+                margin-top: $px-40;
+                border-bottom: map-get($colores , color-primario ) solid $px-2;
+                padding-bottom: $px-40;
+                .boton_plantas{
+                    grid-template-rows: 1fr;
+                    width: $por-100;
+                }
+                .plantas_medicinales_inicio{
+                    margin-top: $auto;
+                }
+                .contenedor_carrusel{
+                display: none;
+                } 
+        }
+        .contenedor_principal_categorias{
+            margin-top: 60px;
+            border-bottom: map-get($colores , color-terciario ) solid $px-2;
+            padding-bottom: $px-20;
+            .contenedor_descripcion_categorias{
+                width: $por-80;
+                margin-left: $auto;
+                margin-right: $auto;
+                margin-bottom: $px-30;
+                .descripcion_categorias p{
+                    font-size: map-get($fuentes , fontSmall );
+                    border-left:map-get($colores , color-cuaternario ) solid $px-2;
+                    border-right:map-get($colores , color-cuaternario ) solid $px-2;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px){
+    .contenedor_preguntas_inicio p{
+        font-size:map-get($fuentes , fontSmall);
+    }
+}
+

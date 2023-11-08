@@ -1,0 +1,30 @@
+
+/*paleta de colores
+
+#8ab446 bordes
+#072a16
+#2d6b22
+#acc864
+#d3e29d
+
+*/
+
+/*hay que importar todas los archivos que crees de sass*/
+/*en estilos.scss solo tiene que tener import*/
+
+@import "variables.scss";
+@import "fuentes.scss";
+@import "reset.scss";
+@import "header.scss";
+@import "mainIndex.scss";
+@import "mainPlantasMedicinales.scss";
+@import "mainCategoria.scss";
+@import "mainPreguntasFrecuentes.scss";
+@import "mainContacto.scss";
+@import "footer.scss";
+@import "utilitarias.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:ital,wght@1,300&display=swap');
+
+
+

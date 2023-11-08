@@ -7,524 +7,424 @@
 #d3e29d
 
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:ital,wght@1,300&display=swap');
-
-*{
-    font-family: 'Gabarito', sans-serif;
-    margin: 0;
-    padding: 0;
+/*hay que importar todas los archivos que crees de sass*/
+/*en estilos.scss solo tiene que tener import*/
+/*aca van todas las variables*/
+/*colores*/
+/*pixeles*/
+/*porcentajes*/
+/*alineacion*/
+/*aca van todas las fuentes large small larger x-small*/
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:ital,wght@1,300&display=swap");
+* {
+  font-family: "Gabarito", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
-/*este es el estilo de la navegacion*/
-
-.contenedor_nav{
-    display: flex;
-    justify-content: right;
-    .link_nav{
-        color: #2d6b22;
-        font-size: large;
-        margin-left: 10px;
-    }
+@media (max-width: 700px) {
+  * {
+    font-size: x-small;
+  }
+}
+.header_nav {
+  margin: 0 auto;
+  width: 95%;
+  border-bottom: #d3e29d solid 3px;
+}
+.header_nav .logo_nav {
+  height: 30px;
+  margin-left: 10px;
+}
+.header_nav .icono_hamburguesa {
+  background-image: url(../assets/img/menu.png);
+}
+.header_nav .contenedor_nav {
+  display: flex;
+  justify-content: right;
+}
+.header_nav .contenedor_nav .link_nav {
+  color: #2d6b22;
+  font-size: large;
+  margin-left: 10px;
+  padding-left: 15px;
+}
+.header_nav .contenedor_nav .link_nav:hover {
+  color: #072a16;
+  background-color: #8ab446;
+  border-radius: 20px;
 }
 
-.contenedor_nav .link_nav:hover{
-    color: #072a16;
-    background-color: #8ab446;
-    border-radius: 20px;
-    padding-left: 15px;
+@media (max-width: 991px) {
+  .header_nav .link_nav {
+    width: 55%;
+  }
+}
+.main_inicio .contenedor_titulo_inicio {
+  margin-top: 130px;
+}
+.main_inicio .contenedor_titulo_inicio .buscador_inicio {
+  width: 40%;
+}
+.main_inicio .contenedor_titulo_inicio h1 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  color: #8ab446;
+}
+.main_inicio .contenedor_titulo_inicio .parrafo_titulo_inicio {
+  width: 80%;
+  margin: 0 auto;
+  color: #072a16;
+}
+.main_inicio .contenedor_principal_carrusel {
+  margin-top: 50px;
+}
+.main_inicio .contenedor_principal_carrusel .plantas_medicinales_inicio {
+  margin-top: 200px;
+  text-align: center;
+}
+.main_inicio .contenedor_principal_carrusel .plantas_medicinales_inicio .boton_inicio {
+  background-color: #2d6b22;
+  color: #8ab446;
+}
+.main_inicio .contenedor_principal_carrusel .plantas_medicinales_inicio .boton_inicio:hover {
+  background-color: #8ab446;
+}
+.main_inicio .contenedor_principal_carrusel .contenedor_carrusel {
+  margin-top: 40px;
+  padding: 20px;
+  border-bottom: #072a16 solid 5px;
+}
+.main_inicio .contenedor_principal_categorias {
+  margin-top: 300px;
+}
+.main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias {
+  text-align: center;
+}
+.main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias p {
+  font-size: large;
+}
+.main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias .boton_categorias {
+  background-color: #8ab446;
+}
+.main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias .boton_categorias:hover {
+  border-radius: 10px;
+  background-color: #acc864;
+}
+.main_inicio .contenedor_principal_categorias .contenedor_categorias_imagenes {
+  text-align: center;
+}
+.main_inicio .contenedor_principal_categorias .contenedor_categorias_imagenes a {
+  text-decoration: none;
+  color: #072a16;
+}
+.main_inicio .contenedor_principal_categorias .contenedor_categorias_imagenes a .card_categoria_inicio {
+  background-color: #8ab446;
+  color: #072a16;
+}
+.main_inicio .contenedor_preguntas_inicio {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  border: #acc864 solid 4px;
+  border-radius: 10px;
+}
+.main_inicio .contenedor_preguntas_inicio a {
+  background-color: #8ab446;
+}
+.main_inicio .contenedor_preguntas_inicio a:hover {
+  background-color: #acc864;
+  color: #072a16;
 }
 
-@media (max-width: 991px){
-        .link_nav{
-            width: 50%
-        }
-    
-}
-
-.header_nav{
-    margin: 0 auto;
-    width: 95%;
-    border-bottom: #d3e29d solid 3px;
-}
-
-.header_nav{
-    .icono_hamburguesa{
-        background-image: url(../assets/img/menu.png);
-    }
-}
-
-.logo_nav{
-    height: 30px;
-    margin-left: 10px;
-}
-
-
-/*aqui va todo el estilo del footer*/
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+@media (max-width: 992px) {
+  .main_inicio .contenedor_titulo_inicio {
+    margin-top: 90px;
+  }
+  .main_inicio .contenedor_titulo_inicio h1 {
     width: 100%;
-    border-top: #d3e29d solid 3px;;
-}
-
-.footer_contacto{
-    vertical-align: middle;
-    height: 50%;
-    margin-top: 20px;
-}
-
-.footer_contacto a{
-    text-decoration:double;
-    color: #072a16;
-}
-
-.footer_social{
-    height: 50%;
     margin-bottom: 20px;
-}
-
-.footer_contacto a:hover{
-    color:#2d6b22;
-}
-
-.footer_social a{
-    margin-left: 10px;
-}
-
-@media (max-width: 992px){
-    .footer_contacto a{
-        font-size: small;
-        height: 100%;
-    }
-}
-
-/*aqui va todo el estilo del inicio del index*/
-
-.contenedor_titulo_inicio{
-    margin-top: 130px;
-}
-
-.parrafo_titulo_incio{
-    width: 80%;
-    margin: 0 auto;
-    color: #072a16;
-}
-
-.contenedor_titulo_inicio h1{
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 90px;
-    color: #8ab446;
-}
-
-.main_inicio .contenedor_carrusel{
-    margin-top: 40px;
-    padding: 20px;
-    border-bottom: #161616 solid 5px;
-}
-
-.main_inicio .plantas_medicinales_inicio{
-    margin-top: 200px;
-    text-align: center;
-}
-
-.contenedor_principal_carrusel{
-    margin-top: 50px;
-}
-
-@media (max-width: 992px){
-    .contenedor_titulo_inicio{
-        margin-top: 90px;
-    }
-    .main_inicio .contenedor_carrusel{
-        display: none;
-    }
-    .contenedor_titulo_inicio{
-        margin-top: 50px;
-    }
-    .contenedor_titulo_inicio .columna_titulo_inicio{
-        grid-template-rows: 1fr;
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-    .contenedor_titulo_inicio h1{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .contenedor_titulo_inicio .titulo_inicio_lupa{
-        text-align: center;
-    }
-
-    .contenedor_titulo_inicio .buscador_inicio{ 
-        display: none;
-    }
-
-    .contenedor_principal_carrusel .plantas_medicinales_inicio{
-        margin-top: auto;
-    }
-
-    .main_inicio .contenedor_principal_carrusel{
-        margin-top: 40px;
-        border-bottom: #8ab446 solid 2px;
-        padding-bottom: 40px;
-    }
-
-    .contenedor_principal_carrusel .boton_plantas{
-        grid-template-rows: 1fr;
-        width: 100%;
-    }
-
-}
-
-.contenedor_titulo_inicio .buscador_inicio{ 
-    width: 40%;
-
-}
-
-.plantas_medicinales_inicio .boton_inicio{
-    background-color:#2d6b22;
-    color: #8ab446;
-}
-
-
-.plantas_medicinales_inicio .boton_inicio:hover{
-    background-color: #8ab446;
-}
-
-/*aqui va todo lo que tiene que ver con las categorias del index*/
-
-
-.descripcion_categorias{
-    text-align: center;
-}
-
-.descripcion_categorias .boton_categorias{
-    background-color: #8ab446;
-}
-
-.descripcion_categorias .boton_categorias:hover{
-    border-radius: 10px;
-    background-color: #acc864;
-}
-
-.contenedor_categorias_imagenes{
-    text-align: center;
-}
-
-.descripcion_categorias p{
-    font-size: large;
-}
-
-.contenedor_principal_categorias{
-    margin-top: 300px;
-}
-
-.descripcion_categorias{
-    margin-left: 150px;
-}
-
-.contenedor_categorias_imagenes a{
-    text-decoration: none;
-    color: #072a16;
-}
-
-@media (max-width: 992px){
-    .contenedor_principal_categorias{
-        margin-top: 60px;
-        border-bottom: #2d6b22 solid 2px;
-        padding-bottom: 20px;
-    }
-
-    .contenedor_principal_categorias .contenedor_descripcion_categorias{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-    }
-    .descripcion_categorias p{
-        font-size: small;
-        border-left:#acc864 solid 2px ;
-        border-right:#acc864 solid 2px  ;
-    }
-}
-
-.card_categoria_inicio{
-    background-color:#8ab446;
-    color:#161616;
-}
-
-/*aqui va todo lo de la seccion de preguntas del index*/
-
-.contenedor_preguntas_inicio{
+  }
+  .main_inicio .contenedor_titulo_inicio .columna_titulo_inicio {
+    grid-template-rows: 1fr;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    border: #acc864 solid 4px;
-    border-radius: 10px;
-}
-
-.contenedor_preguntas_inicio a{
-    background-color: #8ab446;
-}
-
-.contenedor_preguntas_inicio a:hover{
-    background-color: #acc864;
-    color: #072a16;
-}
-
-@media (max-width: 700px){
-    .contenedor_preguntas_inicio p{
-        font-size: small;
-    }
-}
-
-/*aqui va todo lo que tiene que ver con la pagina de plantas Medicinales*/
-
-@media (max-width: 700px){
-    *{
-        font-size: x-small;
-    }
-}
-
-.titulo_plantas{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 80px;
     margin-bottom: 20px;
-}
-
-.main_plantas .imagen_plantaPrincipal{
+  }
+  .main_inicio .contenedor_titulo_inicio .titulo_inicio_lupa {
+    text-align: center;
+  }
+  .main_inicio .contenedor_titulo_inicio .buscador_inicio {
+    display: none;
+  }
+  .main_inicio .contenedor_principal_carrusel {
+    margin-top: 40px;
+    border-bottom: #8ab446 solid 2px;
+    padding-bottom: 40px;
+  }
+  .main_inicio .contenedor_principal_carrusel .boton_plantas {
+    grid-template-rows: 1fr;
     width: 100%;
-    height: 750px;
-}
-
-@media (max-width: 991px){
-    .main_plantas .imagen_plantaPrincipal{
-        height: 300px;
-    }
-}
-
-
-.main_plantas .section_plantas{
-    margin: 0 auto;
-    width: 100%;
-}
-
-@media (max-width: 1280px){
-    .main_plantas .contenedor_plantas{
-        width: 100%;
-        grid-template-rows: 1 / -1;
-    }
-    .aside_plantas{
-        display: none;
-    }
-}
-
-
-
-.subtitulo_plantas{
+  }
+  .main_inicio .contenedor_principal_carrusel .plantas_medicinales_inicio {
+    margin-top: auto;
+  }
+  .main_inicio .contenedor_principal_carrusel .contenedor_carrusel {
+    display: none;
+  }
+  .main_inicio .contenedor_principal_categorias {
+    margin-top: 60px;
+    border-bottom: #2d6b22 solid 2px;
+    padding-bottom: 20px;
+  }
+  .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 70%;
-    text-align: center;
-    border-left: #d3e29d solid 5px;
-    border-right:#d3e29d solid 5px;
+    margin-bottom: 30px;
+  }
+  .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias p {
+    font-size: small;
+    border-left: #acc864 solid 2px;
+    border-right: #acc864 solid 2px;
+  }
+}
+@media (max-width: 700px) {
+  .contenedor_preguntas_inicio p {
+    font-size: small;
+  }
+}
+.main_plantas .titulo_plantas {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.main_plantas .imagen_plantaPrincipal {
+  width: 100%;
+  height: 100%;
+}
+.main_plantas .subtitulo_plantas {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 70%;
+  text-align: center;
+  border-left: #d3e29d solid 5px;
+  border-right: #d3e29d solid 5px;
+}
+.main_plantas .section_plantas {
+  margin: 0 auto;
+  width: 100%;
+}
+.main_plantas .section_plantas .descripcion_planta {
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  border-bottom: #072a16 solid 2px;
+}
+.main_plantas .section_plantas .descripcion_planta .imagen_planta {
+  width: 40%;
+  height: 100%;
+}
+.main_plantas .section_plantas .aside_plantas {
+  height: 700px;
+}
+.main_plantas .section_plantas .aside_plantas .contenedor_preguntas {
+  height: 700px;
+  overflow-y: auto;
+}
+.main_plantas .section_plantas .aside_plantas .contenedor_preguntas h4 {
+  margin-top: 40px;
 }
 
-.descripcion_planta{
-    margin-bottom: 100px;
-    padding-bottom: 20px;
-    border-bottom: #072a16 solid 2px;
+@media (max-width: 1280px) {
+  .main_plantas .contenedor_plantas {
+    width: 100%;
+    grid-template-rows: 1/-1;
+  }
+  .aside_plantas {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .descripcion_planta {
+    width: 100%;
+  }
+}
+.main_categorias .section_categoria {
+  text-align: center;
+}
+.main_categorias .section_categoria .contenedor_categoria {
+  margin-bottom: 80px;
+  margin-top: 60px;
+  width: 100%;
+}
+.main_categorias .section_categoria .contenedor_categoria .imagen_planta_categoria {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main_categorias .section_categoria .contenedor_categoria .imagen_planta_categoria .contenedor_imagen {
+  width: 30%;
+  border-bottom: #8ab446 solid 2px;
+  padding-bottom: 10px;
+}
+.main_categorias .section_categoria .contenedor_categoria .imagen_planta_categoria .contenedor_imagen img {
+  width: 100%;
+  height: 100%;
+}
+.main_categorias .section_categoria .contenedor_categoria .parrafo_categorias {
+  font-size: larger;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.aside_plantas{
-    height: 700px;
-}
-
-.contenedor_preguntas{
-    height: 700px;
-    overflow-y: auto;
-}
-
-.contenedor_preguntas h4{
-    margin-top: 40px;
-}
-
-.imagen_planta{
-    width: 200px;
-}
-
-@media (max-width: 991px){
-    .imagen_planta{
-        width: 30%;
-        height: 100%;
-    }
-}
-
-/*aqui va todo lo que tiene que ver con la pagina de Categorias*/
-
-.imagen_planta_categoria{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.section_categoria .contenedor_categoria{
-    margin-bottom: 80px;
-    margin-top: 60px;
-}
-
-.section_categoria{
-    text-align: center;
-}
-
-.section_categoria p{
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+@media (max-width: 991px) {
+  .main_categorias .section_categoria .contenedor_categoria .parrafo_categorias {
+    font-size: small;
     text-align: left;
+  }
+}
+.main_preguntasFrecuentes {
+  height: 100vh;
+}
+.main_preguntasFrecuentes .titulo_preguntas {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.main_preguntasFrecuentes .contenedor_preguntas_frecuentes {
+  height: 80%;
+  overflow-y: scroll;
+  padding: 20px;
+  border-top: #2d6b22 solid 5px;
+  border-bottom: #2d6b22 solid 5px;
+  margin-bottom: 40px;
+}
+.main_preguntasFrecuentes .contenedor_preguntas_frecuentes article {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-bottom: #d3e29d solid 2px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.main_preguntasFrecuentes .contenedor_preguntas_frecuentes article p {
+  font-size: larger;
 }
 
-.section_categoria img{
-    width: 200px;
-    height: 100%;
-    border-bottom: #8ab446 solid 2px;
-    padding-bottom: 10px;
-}
-
-@media (max-width: 991px){
-    .section_categoria img{
-        width: 90%;
-        height: 90%;
-    }
-}
-
-/*aca va todo lo que tiene que ver con la pagina de preguntas frecuentes*/
-
-.titulo_preguntas{
-    margin-top: 40px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.contenedor_preguntas_frecuentes{
-    height: 80vh;
-    overflow-y: scroll;
-    padding: 20px;
+@media (max-width: 991px) {
+  .main_preguntasFrecuentes {
+    height: 100vh;
+  }
+  .main_preguntasFrecuentes .contenedor_preguntas_frecuentes {
+    height: 80%;
     border-top: #2d6b22 solid 5px;
-    border-bottom:#2d6b22 solid 5px;
-    margin-bottom: 40px;
+    border-bottom: #2d6b22 solid 5px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+  }
+}
+.main_contacto {
+  margin-bottom: 20px;
+  height: 100vh;
+}
+.main_contacto .contenedor_contacto, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto {
+  height: 100%;
+  width: 100%;
+}
+.main_contacto .contenedor_contacto .titulo_contacto, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .titulo_contacto {
+  text-align: center;
+}
+.main_contacto .contenedor_contacto .titulo_contacto h1, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .titulo_contacto h1 {
+  margin-top: 10px;
+}
+.main_contacto .contenedor_contacto .titulo_contacto h5, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .titulo_contacto h5 {
+  border-bottom: #d3e29d solid 2px;
+  width: 50%;
+  margin: 0 auto;
+}
+.main_contacto .contenedor_contacto .datos_contacto, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .datos_contacto {
+  margin-top: 100px;
+}
+.main_contacto .contenedor_contacto .datos_contacto .mapa_contacto {
+  width: 50%;
+}
+.main_contacto .contenedor_contacto .contenedor_formulario, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .contenedor_formulario {
+  height: 50%;
+  margin: auto 0;
+}
+.main_contacto .contenedor_contacto .contenedor_formulario .boton_enviar {
+  background-color: #8ab446;
+  color: #072a16;
+}
+.main_contacto .contenedor_contacto .contenedor_formulario .boton_enviar:hover {
+  background-color: #acc864;
+  color: #072a16;
 }
 
-.contenedor_preguntas_frecuentes article{
-    margin-top: 20px;
-    margin-bottom: 40px;
-    border-bottom: #d3e29d solid 2px;
+@media (max-width: 573px) {
+  .contenedor_contacto .datos_contacto, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .datos_contacto {
     text-align: center;
-    padding-bottom: 40px;
-}
-
-.contenedor_preguntas_frecuentes article p{
-    font-size:larger ;
-}
-
-@media (max-width: 991px){
-    .contenedor_preguntas_frecuentes{
-        height: 60vh;
-        border-top: #2d6b22 solid 5px;
-        border-bottom:#2d6b22 solid 5px;
-        border-left: none;
-        border-right: none;
-        border-radius: 0px;
-    }
-}
-
-/*aca va todo lo que tiene que ver con la pagina de contacto*/
-
-.mapa_contacto{
-    width: 50%;
-    margin-top: 20px;
-    height: 100%;
-}
-
-.main_contacto{
-    margin-bottom: 20px;
-}
-
-.titulo_contacto{
-    text-align: center;
-}
-
-.titulo_contacto h1{
-    margin-top: 10px;
-}
-
-.titulo_contacto h5{
-    border-bottom: #d3e29d solid 2px;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.contenedor_contacto{
-    height: 90%;
-    margin-top: 50px;
-    width: 100%;
-}
-
-.main_contacto .boton_enviar{
-    background-color:#8ab446;
-    color:#072a16;
-}
-
-.main_contacto .boton_enviar:hover{
-    background-color: #acc864;
-    color: #161616;
-}
-
-
-.main_contacto .contenedor_formulario{
-    height: 50%;
-    margin: auto 0;
-}
-
-.main_contacto .datos_contacto{
-    margin-top: 100px;
-}
-
-@media (max-width: 573px){
-   .main_contacto .datos_contacto{
-    text-align: center;
-   }
-   .contenedor_mapa_contacto{
-    margin-bottom: 20px;
-   }
-   .contenedor_contacto .contenedor_formulario{
-    width: 90%;
-    margin-left:  auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-   }
-   .main_contacto .datos_contacto{
-    margin-top: 50px;
-   }
-   .datos_contacto p{
-    text-align:left;
+    margin-top: 40px;
+  }
+  .contenedor_contacto .datos_contacto p, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .datos_contacto p {
+    text-align: left;
     width: 40%;
     margin: 0 auto;
-   }
+  }
+  .contenedor_contacto .datos_contacto .contenedor_mapa_contacto, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .datos_contacto .contenedor_mapa_contacto {
+    margin-bottom: 20px;
+  }
+  .contenedor_contacto .contenedor_formulario, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .contenedor_formulario {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border-top: #d3e29d solid 3px;
+}
+.footer .footer_contacto {
+  height: 50%;
+  margin-top: 5px;
+}
+.footer .footer_contacto a {
+  text-decoration: double;
+  color: #072a16;
+}
+.footer .footer_contacto a:hover {
+  color: #2d6b22;
+}
+.footer .footer_social {
+  height: 50%;
+  margin-bottom: 5px;
+}
+.footer .footer_social a {
+  margin: auto 5px;
 }
 
+@media (max-width: 992px) {
+  .footer_contacto a {
+    font-size: small;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
