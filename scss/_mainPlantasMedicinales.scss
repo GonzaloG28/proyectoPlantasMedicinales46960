@@ -1,11 +1,7 @@
 
 .main_plantas{
     .titulo_plantas{
-        width: $por-80;
-        margin: 0 $auto;
-        text-align: $center;
-        margin-top: $px-80;
-        margin-bottom: $px-20;
+        @include titulos($center, $px-40, $px-30)
     }
     .imagen_plantaPrincipal{
         width: $por-100;

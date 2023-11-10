@@ -1,0 +1,7 @@
+@mixin titulos($aling, $px-top, $px-bottom){
+        width: $por-80;
+        margin: 0 $auto;
+        text-align: $aling;
+        margin-top: $px-top;
+        margin-bottom: $px-bottom;
+}

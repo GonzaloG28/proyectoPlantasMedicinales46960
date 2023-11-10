@@ -1,7 +1,9 @@
 
 
 .main_categorias{
-
+    .titulo_categorias{
+        @include titulos($center, $px-40, $px-20)
+    }
     .section_categoria{
         text-align: $center;
 
@@ -36,7 +38,7 @@
 
 @media (max-width: 991px){
     .main_categorias .section_categoria .contenedor_categoria .parrafo_categorias{
-            font-size: map-get($fuentes, fontSmall);
+            font-size: map-get($fuentes, fontXsmall);
             text-align: $left;
         }
  }

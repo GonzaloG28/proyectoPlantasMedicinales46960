@@ -22,19 +22,26 @@
             font-size: map-get($fuentes , fontLarge );
             margin-left: $px-10;
             padding-left: $px-15;
-            &:hover{
-                color: map-get($colores , color-secundario);
-                background-color: map-get($colores , color-primario );
-                border-radius: $px-20;
-            }
         }
     }
 }
 
 @media (max-width: 991px){
     .header_nav{
-        .link_nav{
-            width: 55%;
+        .contenedor_nav{
+            .link_nav{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .header_nav{
+        .contenedor_nav{
+            .link_nav{
+                width: 80%;
+            }
         }
     }
 }
