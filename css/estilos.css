@@ -359,7 +359,7 @@
 }
 .main_contacto .contenedor_contacto .titulo_contacto h2, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .titulo_contacto h2 {
   border-bottom: #d3e29d solid 2px;
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 }
 .main_contacto .contenedor_contacto .datos_contacto, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .datos_contacto {
