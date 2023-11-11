@@ -37,6 +37,9 @@
 }
 
 @media (max-width: 991px){
+    .main_categorias .titulo_categorias{
+        text-align: $left;
+    }
     .main_categorias .section_categoria .contenedor_categoria .parrafo_categorias{
             font-size: map-get($fuentes, fontSmall);
             text-align: $left;

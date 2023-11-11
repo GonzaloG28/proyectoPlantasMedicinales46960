@@ -256,6 +256,9 @@
   }
 }
 @media (max-width: 991px) {
+  .main_plantas .titulo_plantas {
+    text-align: left;
+  }
   .descripcion_planta {
     width: 100%;
   }
@@ -298,6 +301,9 @@
 }
 
 @media (max-width: 991px) {
+  .main_categorias .titulo_categorias {
+    text-align: left;
+  }
   .main_categorias .section_categoria .contenedor_categoria .parrafo_categorias {
     font-size: small;
     text-align: left;

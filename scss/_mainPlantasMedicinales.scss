@@ -54,7 +54,9 @@
 }
 
 @media (max-width: 991px){
-
+    .main_plantas .titulo_plantas{
+        text-align: $left;
+    }
     .descripcion_planta{
         width: $por-100;
     }
