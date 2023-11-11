@@ -16,7 +16,7 @@
 
 
 
-.text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+.text-focus-in{animation:text-focus-in 0.5s cubic-bezier(.55,.085,.68,.53) both}
 
 @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 
@@ -65,6 +65,8 @@
 
 
   .hvr-grow-shadow {
+    position: relative;
+    display: inline-block;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -77,4 +79,24 @@
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+  }
+
+  .contenedor_categoria .hvr-grow-shadow h4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            color: #072a16;
+  }
+
+  .contenedor_categoria .hvr-grow-shadow:hover h4{
+    opacity: 1;
+  }
+
+  .contenedor_categoria .hvr-grow-shadow:hover img{
+    filter: alpha(opacity=20);
+    -webkit-opacity: 0.2;
+    opacity: 0.2;
   }

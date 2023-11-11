@@ -1,11 +1,12 @@
 
 .main_plantas{
     .titulo_plantas{
-        @include titulos($center, $px-40, $px-30)
+        @include titulos($center, $px-40, $px-20)
     }
     .imagen_plantaPrincipal{
         width: $por-100;
         height: $por-100;
+        border-bottom: map-get($colores , color-secundario ) solid $px-3;
     }
     .subtitulo_plantas{
         margin-left: $auto;
@@ -23,7 +24,7 @@
         .descripcion_planta{
             margin-bottom: $px-100;
             padding-bottom: $px-20;
-            border-bottom: map-get($colores , color-secundario ) solid $px-2;
+            border-bottom: map-get($colores , color-secundario ) solid $px-3;
             .imagen_planta{
                 width: 40%;
                 height: $por-100;
@@ -57,7 +58,7 @@
     .main_plantas .titulo_plantas{
         text-align: $left;
     }
-    .descripcion_planta{
+    .main_plantas .section_plantas .descripcion_planta{
         width: $por-100;
     }
 }

@@ -181,6 +181,9 @@
     border-bottom: #2d6b22 solid 2px;
     padding-bottom: 20px;
   }
+  .main_inicio .contenedor_principal_categorias .contenedor_categorias_secundario .contenedor_categorias_imagenes h5 {
+    font-size: small;
+  }
   .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias {
     width: 80%;
     margin-left: auto;
@@ -188,12 +191,16 @@
     margin-bottom: 30px;
   }
   .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias p {
+    padding: 10px;
     font-size: small;
     border-left: #acc864 solid 2px;
     border-right: #acc864 solid 2px;
   }
 }
 @media (max-width: 700px) {
+  .contenedor_categorias_secundario .contenedor_categorias_imagenes h5 {
+    font-size: x-small;
+  }
   .main_inicio .contenedor_preguntas_inicio {
     margin-top: 40px;
   }
@@ -206,11 +213,12 @@
   margin: 0 auto;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .main_plantas .imagen_plantaPrincipal {
   width: 100%;
   height: 100%;
+  border-bottom: #072a16 solid 3px;
 }
 .main_plantas .subtitulo_plantas {
   margin-left: auto;
@@ -229,7 +237,7 @@
 .main_plantas .section_plantas .descripcion_planta {
   margin-bottom: 100px;
   padding-bottom: 20px;
-  border-bottom: #072a16 solid 2px;
+  border-bottom: #072a16 solid 3px;
 }
 .main_plantas .section_plantas .descripcion_planta .imagen_planta {
   width: 40%;
@@ -259,7 +267,7 @@
   .main_plantas .titulo_plantas {
     text-align: left;
   }
-  .descripcion_planta {
+  .main_plantas .section_plantas .descripcion_planta {
     width: 100%;
   }
 }
