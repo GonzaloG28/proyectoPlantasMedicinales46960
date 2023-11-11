@@ -73,6 +73,7 @@
   color: #8ab446;
 }
 .main_inicio .contenedor_titulo_inicio .parrafo_titulo_inicio {
+  text-align: justify;
   width: 80%;
   margin: 0 auto;
   color: #072a16;
@@ -149,6 +150,7 @@
     margin-bottom: 20px;
   }
   .main_inicio .contenedor_titulo_inicio .columna_titulo_inicio {
+    text-align: justify;
     grid-template-rows: 1fr;
     width: 85%;
     margin-left: auto;
@@ -265,7 +267,7 @@
 }
 @media (max-width: 991px) {
   .main_plantas .titulo_plantas {
-    text-align: left;
+    text-align: justify;
   }
   .main_plantas .section_plantas .descripcion_planta {
     width: 100%;
@@ -310,11 +312,11 @@
 
 @media (max-width: 991px) {
   .main_categorias .titulo_categorias {
-    text-align: left;
+    text-align: justify;
   }
   .main_categorias .section_categoria .contenedor_categoria .parrafo_categorias {
     font-size: small;
-    text-align: left;
+    text-align: justify;
   }
 }
 .main_preguntasFrecuentes {

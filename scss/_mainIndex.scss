@@ -12,6 +12,7 @@
             color: map-get($colores , color-primario );
         }
         .parrafo_titulo_inicio{
+            text-align: $justify;
             width: $por-80;
             margin: 0 $auto;
             color: map-get($colores , color-secundario );
@@ -93,6 +94,7 @@
                 margin-bottom: $px-20;
             }
             .columna_titulo_inicio{
+                text-align: $justify;
                 grid-template-rows: 1fr;
                 width: 85%;
                 margin-left: $auto;
