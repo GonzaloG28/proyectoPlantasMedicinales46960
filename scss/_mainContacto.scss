@@ -10,9 +10,9 @@
             h1{
                 margin-top: $px-40;
             }
-            h5{
+            h2{
                 border-bottom: map-get($colores , color-quinario ) solid $px-2;
-                width: $por-50;
+                width: $por-30;
                 margin: 0 $auto;
             }
         }
