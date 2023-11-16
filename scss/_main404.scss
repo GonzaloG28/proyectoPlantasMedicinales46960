@@ -1,0 +1,17 @@
+.main_404{
+    height: 100vh;
+    .contenedor_titulo_404{
+        height: $por-80;
+        width: $por-95;
+        text-align: $center;
+        margin-top: $px-80;
+        .boton_404{
+            margin-top: $px-20;
+                background-color: map-get($colores , color-primario );
+                &:hover{
+                    background-color:#2d6b22;
+                    color: map-get($colores , color-primario );
+                }
+            }
+        }
+    }

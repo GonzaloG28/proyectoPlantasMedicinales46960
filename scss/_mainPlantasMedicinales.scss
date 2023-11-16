@@ -24,6 +24,7 @@
         .descripcion_planta{
             margin-bottom: $px-100;
             padding-bottom: $px-20;
+            text-align: $justify;
             border-bottom: map-get($colores , color-secundario ) solid $px-3;
             .imagen_planta{
                 width: 40%;
@@ -63,6 +64,14 @@
     }
 }
 
+@media (max-width: 767px){
+    .main_plantas .section_plantas .descripcion_planta{
+        flex-direction: column;
+        img{
+            margin: 0 $auto;
+        }
+    }
+}
 
 
 
