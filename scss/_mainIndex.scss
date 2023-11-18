@@ -12,6 +12,7 @@
             color: map-get($colores , color-primario );
         }
         .parrafo_titulo_inicio{
+            font-size: map-get($fuentes , fontLarger );
             text-align: $justify;
             width: $por-80;
             margin: 0 $auto;
@@ -151,8 +152,8 @@
 
 @media (max-width: 700px){
     .contenedor_categorias_secundario{
-        .contenedor_categorias_imagenes h5{
-            font-size: map-get($fuentes , fontXsmall );
+        .contenedor_categorias_imagenes h4{
+            font-size: map-get($fuentes , fontSmall );
         }
     }
     .main_inicio .contenedor_preguntas_inicio{
