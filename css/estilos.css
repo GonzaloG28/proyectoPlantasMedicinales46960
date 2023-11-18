@@ -431,28 +431,42 @@
   }
 }
 .main_404 {
-  height: 100%;
+  height: 100vh;
+  display: flex;
 }
-.main_404 .contenedor_titulo_404 {
+.main_404 .contenedor_404 {
+  width: 100%;
+}
+.main_404 .contenedor_404 .contenedor_titulo_404 {
   height: 50%;
   width: 100%;
   text-align: center;
   margin-top: 80px;
 }
-.main_404 .contenedor_titulo_404 .boton_404 {
+.main_404 .contenedor_404 .contenedor_titulo_404 .boton_404 {
   margin-top: 20px;
   background-color: #8ab446;
 }
-.main_404 .contenedor_titulo_404 .boton_404:hover {
+.main_404 .contenedor_404 .contenedor_titulo_404 .boton_404:hover {
   background-color: #2d6b22;
   color: #8ab446;
 }
-.main_404 .imagen_404 {
-  height: 40%;
+.main_404 .contenedor_404 .imagen_404 {
+  height: 50%;
+  width: 100%;
+}
+.main_404 .contenedor_404 .imagen_404 img {
+  height: 100%;
   width: 40%;
   object-fit: cover;
 }
 
+@media (max-width: 991px) {
+  .main_404 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
