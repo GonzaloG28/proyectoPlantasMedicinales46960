@@ -1,8 +1,8 @@
 .main_404{
-    height: 100vh;
+    height: 100%;
     .contenedor_titulo_404{
-        height: $por-80;
-        width: $por-95;
+        height: $por-50;
+        width: $por-100;
         text-align: $center;
         margin-top: $px-80;
         .boton_404{
@@ -13,5 +13,10 @@
                     color: map-get($colores , color-primario );
                 }
             }
+        }
+        .imagen_404{
+            height: 40%;
+            width: 40%;
+            object-fit: cover;
         }
     }

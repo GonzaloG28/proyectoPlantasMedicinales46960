@@ -2,6 +2,7 @@
 
 .main_contacto{
     height: 100vh;
+    margin-bottom: $px-80;
     .contenedor_contacto{
         height: $por-100;
         width: $por-100;
@@ -22,22 +23,25 @@
                 @extend .contenedor_contacto;
                 width: $por-50;
             }
-        }
-        .contenedor_formulario{
-            height: $por-50;
-            margin: $auto 0;
-            .boton_enviar{
-                background-color:map-get($colores , color-primario );
-                color:map-get($colores , color-secundario );
-                &:hover{
-                    background-color: map-get($colores , color-cuaternario );
-                    color: map-get($colores , color-secundario );
+            .contenedor_formulario{
+                height: $por-50;
+                margin: $auto 0;
+                .boton_enviar{
+                    background-color:map-get($colores , color-primario );
+                    color:map-get($colores , color-secundario );
+                    &:hover{
+                        background-color: map-get($colores , color-cuaternario );
+                        color: map-get($colores , color-secundario );
+                        }
                     }
                 }
             }
         }
     }
     @media (max-width: 573px){
+        .main_contacto{
+            height: 100%;
+        }
         .main_contacto .contenedor_contacto .datos_contacto{
          text-align: $center;
          margin-top: $px-40;

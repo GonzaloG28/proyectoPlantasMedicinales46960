@@ -371,6 +371,7 @@
 }
 .main_contacto {
   height: 100vh;
+  margin-bottom: 80px;
 }
 .main_contacto .contenedor_contacto, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto {
   height: 100%;
@@ -393,20 +394,23 @@
 .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto {
   width: 50%;
 }
-.main_contacto .contenedor_contacto .contenedor_formulario, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .contenedor_formulario {
+.main_contacto .contenedor_contacto .datos_contacto .contenedor_formulario {
   height: 50%;
   margin: auto 0;
 }
-.main_contacto .contenedor_contacto .contenedor_formulario .boton_enviar {
+.main_contacto .contenedor_contacto .datos_contacto .contenedor_formulario .boton_enviar {
   background-color: #8ab446;
   color: #072a16;
 }
-.main_contacto .contenedor_contacto .contenedor_formulario .boton_enviar:hover {
+.main_contacto .contenedor_contacto .datos_contacto .contenedor_formulario .boton_enviar:hover {
   background-color: #acc864;
   color: #072a16;
 }
 
 @media (max-width: 573px) {
+  .main_contacto {
+    height: 100%;
+  }
   .main_contacto .contenedor_contacto .datos_contacto, .main_contacto .contenedor_contacto .datos_contacto .mapa_contacto .datos_contacto {
     text-align: center;
     margin-top: 40px;
@@ -426,11 +430,11 @@
   }
 }
 .main_404 {
-  height: 100vh;
+  height: 100%;
 }
 .main_404 .contenedor_titulo_404 {
-  height: 80%;
-  width: 95%;
+  height: 50%;
+  width: 100%;
   text-align: center;
   margin-top: 80px;
 }
@@ -442,10 +446,16 @@
   background-color: #2d6b22;
   color: #8ab446;
 }
+.main_404 .imagen_404 {
+  height: 40%;
+  width: 40%;
+  object-fit: cover;
+}
 
 .footer {
   display: flex;
   flex-direction: column;
+  height: 20%;
   justify-content: center;
   align-items: center;
   gap: 10px;
