@@ -5,8 +5,9 @@
     }
     .imagen_plantaPrincipal{
         width: $por-100;
-        height: $por-100;
-        border-bottom: map-get($colores , color-secundario ) solid $px-3;
+        height: 1280px;
+        background-image: url(../assets/img/principalPlantas.jpg);
+        background-repeat: no-repeat;
     }
     .subtitulo_plantas{
         margin-left: $auto;
@@ -32,7 +33,9 @@
             }
         }
         .aside_plantas{
+            text-align: $left;
             height: 700px;
+            margin-left: $px-100;
             .contenedor_preguntas{
                 height: 700px;
                 overflow-y: $auto;
@@ -46,12 +49,20 @@
 
 @media (max-width: 1280px){
 
-    .main_plantas .contenedor_plantas{
-        width: $por-100;
-        grid-template-rows: 1 / -1;
-    }
-    .aside_plantas{
-        display: none;
+    .main_plantas{
+        .imagen_plantaPrincipal{
+            background-image: url(../assets/img/principalPlantas2.jpg);
+            background-position: center;
+            width: $por-100;
+            height: 853px;
+        }
+        
+        .contenedor_plantas{
+            width: $por-100;
+        }
+        .aside_plantas{
+            display: none;
+        }
     }
 }
 
@@ -73,5 +84,15 @@
     }
 }
 
+@media (max-width: 426px){
+    .main_plantas{
+        .imagen_plantaPrincipal{
+            background-image: url(../assets/img/principalPlantas3.jpg);
+            background-position: center;
+            width: $por-100;
+            height: 283px;
+        }
+    }
+}
 
 

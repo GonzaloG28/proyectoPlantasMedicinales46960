@@ -39,9 +39,10 @@
         }
     }
     .contenedor_principal_categorias{
-        margin-top: 300px;
+        margin-top: $px-100;
         .contenedor_descripcion_categorias{
             .descripcion_categorias{
+                margin-top: 200px;
                 text-align: $center;
                 p{
                     font-size: map-get($fuentes , fontLarge );
@@ -125,24 +126,27 @@
                 } 
         }
         .contenedor_principal_categorias{
+            margin-top: 50px;
+            border-bottom: map-get($colores , color-terciario ) solid $px-2;
+            padding-bottom: $px-40;
             .contenedor_categorias_secundario{
-                .contenedor_categorias_imagenes h5{
+                .contenedor_categorias_imagenes h4{
                     font-size: map-get($fuentes , fontSmall );
                 }
             }
-            margin-top: 60px;
-            border-bottom: map-get($colores , color-terciario ) solid $px-2;
-            padding-bottom: $px-20;
             .contenedor_descripcion_categorias{
                 width: $por-80;
                 margin-left: $auto;
                 margin-right: $auto;
                 margin-bottom: $px-30;
-                .descripcion_categorias p{
-                    padding: $px-10;
-                    font-size: map-get($fuentes , fontSmall );
-                    border-left:map-get($colores , color-cuaternario ) solid $px-2;
-                    border-right:map-get($colores , color-cuaternario ) solid $px-2;
+                .descripcion_categorias{
+                    margin-top: 0;
+                    p{
+                        padding: $px-10;
+                        font-size: map-get($fuentes , fontSmall );
+                        border-left:map-get($colores , color-cuaternario ) solid $px-2;
+                        border-right:map-get($colores , color-cuaternario ) solid $px-2;
+                    }
                 }
             }
         }

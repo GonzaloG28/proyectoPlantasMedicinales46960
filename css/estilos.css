@@ -99,9 +99,10 @@
   border-bottom: #072a16 solid 5px;
 }
 .main_inicio .contenedor_principal_categorias {
-  margin-top: 300px;
+  margin-top: 100px;
 }
 .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias {
+  margin-top: 200px;
   text-align: center;
 }
 .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias p {
@@ -180,11 +181,11 @@
     display: none;
   }
   .main_inicio .contenedor_principal_categorias {
-    margin-top: 60px;
+    margin-top: 50px;
     border-bottom: #2d6b22 solid 2px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
-  .main_inicio .contenedor_principal_categorias .contenedor_categorias_secundario .contenedor_categorias_imagenes h5 {
+  .main_inicio .contenedor_principal_categorias .contenedor_categorias_secundario .contenedor_categorias_imagenes h4 {
     font-size: small;
   }
   .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias {
@@ -192,6 +193,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+  .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias {
+    margin-top: 0;
   }
   .main_inicio .contenedor_principal_categorias .contenedor_descripcion_categorias .descripcion_categorias p {
     padding: 10px;
@@ -220,8 +224,9 @@
 }
 .main_plantas .imagen_plantaPrincipal {
   width: 100%;
-  height: 100%;
-  border-bottom: #072a16 solid 3px;
+  height: 1280px;
+  background-image: url(../assets/img/principalPlantas.jpg);
+  background-repeat: no-repeat;
 }
 .main_plantas .subtitulo_plantas {
   margin-left: auto;
@@ -248,7 +253,9 @@
   height: 100%;
 }
 .main_plantas .section_plantas .aside_plantas {
+  text-align: left;
   height: 700px;
+  margin-left: 100px;
 }
 .main_plantas .section_plantas .aside_plantas .contenedor_preguntas {
   height: 700px;
@@ -259,11 +266,16 @@
 }
 
 @media (max-width: 1280px) {
+  .main_plantas .imagen_plantaPrincipal {
+    background-image: url(../assets/img/principalPlantas2.jpg);
+    background-position: center;
+    width: 100%;
+    height: 853px;
+  }
   .main_plantas .contenedor_plantas {
     width: 100%;
-    grid-template-rows: 1/-1;
   }
-  .aside_plantas {
+  .main_plantas .aside_plantas {
     display: none;
   }
 }
@@ -283,12 +295,26 @@
     margin: 0 auto;
   }
 }
+@media (max-width: 426px) {
+  .main_plantas .imagen_plantaPrincipal {
+    background-image: url(../assets/img/principalPlantas3.jpg);
+    background-position: center;
+    width: 100%;
+    height: 283px;
+  }
+}
 .main_categorias .titulo_categorias {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+.main_categorias .imagen_principal_categoria {
+  width: 100%;
+  height: 1280px;
+  background-image: url(../assets/img/imagenCategoria.jpg);
+  background-repeat: no-repeat;
 }
 .main_categorias .section_categoria {
   text-align: center;
@@ -320,6 +346,14 @@
   text-align: center;
 }
 
+@media (max-width: 1280px) {
+  .main_categorias .imagen_principal_categoria {
+    background-image: url(../assets/img/imagenCategoria2.jpg);
+    background-position: center;
+    width: 100%;
+    height: 853px;
+  }
+}
 @media (max-width: 991px) {
   .main_categorias .titulo_categorias {
     text-align: justify;
@@ -327,6 +361,14 @@
   .main_categorias .section_categoria .contenedor_categoria .parrafo_categorias {
     font-size: small;
     text-align: justify;
+  }
+}
+@media (max-width: 426px) {
+  .main_categorias .imagen_principal_categoria {
+    background-image: url(../assets/img/imagenCategoria3.jpg);
+    background-position: center;
+    width: 100%;
+    height: 283px;
   }
 }
 .main_preguntasFrecuentes {
