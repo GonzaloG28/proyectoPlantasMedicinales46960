@@ -9,7 +9,7 @@
             width: $por-90;
             margin: 0 $auto;
             margin-bottom: $px-90;
-            color: map-get($colores , color-primario );
+            color: map-get($colores , color-terciario );
         }
         .parrafo_titulo_inicio{
             font-size: map-get($fuentes , fontLarger );
@@ -22,6 +22,7 @@
     .contenedor_principal_carrusel{
         margin-top: $px-50;
         .plantas_medicinales_inicio{
+            color: map-get($colores , color-terciario );
             margin-top: 200px;
             text-align: $center;
             .boton_inicio{
@@ -76,7 +77,7 @@
         margin-bottom: $px-40;
         border: map-get($colores , color-cuaternario ) solid 4px;
         border-radius: $px-10;
-        a{
+        .link_preguntas_inicio{
             background-color: map-get($colores , color-primario );
             &:hover{
                 background-color:#2d6b22;
