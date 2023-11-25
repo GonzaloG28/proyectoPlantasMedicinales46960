@@ -5,7 +5,6 @@
         color: map-get($colores , color-terciario );
     }
     .imagen_plantaPrincipal{
-        width: $por-100;
         height: 1280px;
         background-image: url(../assets/img/principalPlantas.jpg);
         background-repeat: no-repeat;
@@ -15,14 +14,13 @@
         margin-right: $auto;
         margin-top: $px-100;
         margin-bottom: $px-100;
-        width: 70%;
+        width: $por-70;
         text-align: $center;
         border-left: map-get($colores , color-quinario) solid $px-5;
         border-right:map-get($colores , color-quinario ) solid $px-5;
     }
     .section_plantas{
         margin: 0 $auto;
-        width: $por-100;
         .descripcion_planta{
             margin-bottom: $px-100;
             padding-bottom: $px-20;
@@ -30,7 +28,7 @@
             border-bottom: map-get($colores , color-secundario ) solid $px-3;
             .imagen_planta{
                 width: 40%;
-                height: $por-100;
+                margin: 0 $auto;
             }
         }
         .aside_plantas{
@@ -39,7 +37,6 @@
             margin-left: $px-100;
             .contenedor_preguntas{
                 height: 700px;
-                overflow-y: $auto;
                 h4{
                     margin-top: $px-40;
                 }
@@ -53,11 +50,9 @@
     .main_plantas{
         .imagen_plantaPrincipal{
             background-image: url(../assets/img/principalPlantas2.jpg);
-            background-position: center;
-            width: $por-100;
+            background-position: $center;
             height: 853px;
-        }
-        
+        }   
         .contenedor_plantas{
             width: $por-100;
         }
@@ -71,17 +66,11 @@
     .main_plantas .titulo_plantas{
         text-align: $justify;
     }
-    .main_plantas .section_plantas .descripcion_planta{
-        width: $por-100;
-    }
 }
 
 @media (max-width: 767px){
     .main_plantas .section_plantas .descripcion_planta{
         flex-direction: column;
-        img{
-            margin: 0 $auto;
-        }
     }
 }
 
@@ -89,8 +78,7 @@
     .main_plantas{
         .imagen_plantaPrincipal{
             background-image: url(../assets/img/principalPlantas3.jpg);
-            background-position: center;
-            width: $por-100;
+            background-position: $center;
             height: 283px;
         }
     }

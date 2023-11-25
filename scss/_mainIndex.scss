@@ -54,7 +54,7 @@
                 .boton_categorias{
                     background-color: map-get($colores , color-primario );
                     &:hover{
-                        background-color:#2d6b22;
+                        background-color:map-get($colores , color-terciario );
                         color: map-get($colores , color-primario );
                     }
                     }
@@ -83,7 +83,7 @@
         .link_preguntas_inicio{
             background-color: map-get($colores , color-primario );
             &:hover{
-                background-color:#2d6b22;
+                background-color: map-get($colores , color-terciario);
                 color: map-get($colores , color-primario );
             }
         }

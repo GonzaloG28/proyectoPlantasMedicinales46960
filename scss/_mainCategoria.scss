@@ -6,38 +6,27 @@
         color: map-get($colores , color-terciario );
     }
     .imagen_principal_categoria{
-        width: $por-100;
         height: 1280px;
         background-image: url(../assets/img/imagenCategoria.jpg);
         background-repeat: no-repeat;
     }
     .section_categoria{
         text-align: $center;
-
         .contenedor_categoria{
             margin-bottom: $px-80;
-            margin-top: 60px;
-            width: $por-100;
+            margin-top: $px-60;
             .imagen_planta_categoria{
-                width: $por-100;
                 display: flex;
                 justify-content: space-evenly;
                 .contenedor_imagen{
                     width: $por-30;
                     border-bottom: map-get($colores , color-primario ) solid $px-5;
                     padding-bottom: $px-10;
-                    img{
-                        width: $por-100;
-                        height: $por-100;
-                    }
                 }
             }
             .parrafo_categorias{
                 font-size: map-get($fuentes, fontLarger);
-                width: $por-80;
-                margin: 0 $auto;
-                margin-bottom: $px-20;
-                text-align: $center;
+                @include titulos($center, 0, $px-20)
             }
         }
     }
@@ -48,8 +37,7 @@
     .main_categorias{
         .imagen_principal_categoria{
             background-image: url(../assets/img/imagenCategoria2.jpg);
-            background-position: center;
-            width: $por-100;
+            background-position: $center;
             height: 853px;
         }
     }
@@ -68,8 +56,8 @@
  @media (max-width: 768px){
     .main_categorias .section_categoria .contenedor_categoria .imagen_planta_categoria{
         .imagen_primaria{
-            width: 70%;
-            height: 70%;
+            width: $por-70;
+            height: $por-70;
         }
         .imagen_secundaria{
             display: none;
@@ -81,8 +69,7 @@
     .main_categorias{
         .imagen_principal_categoria{
             background-image: url(../assets/img/imagenCategoria3.jpg);
-            background-position: center;
-            width: $por-100;
+            background-position: $center;
             height: 283px;
         }
     }

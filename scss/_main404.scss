@@ -2,7 +2,7 @@
 .main_404{
     height: 80vh;
     .contenedor_404{
-        height: 70%;
+        height: $por-70;
         .contenedor_404_titulo{
             height: $por-80;
             text-align: $center;
@@ -14,7 +14,7 @@
                 .boton_404{
                     background-color: map-get($colores , color-primario );
                 &:hover{
-                    background-color:#2d6b22;
+                    background-color:map-get($colores , color-terciario );
                     color: map-get($colores , color-primario );
                     }
                 }
@@ -22,12 +22,9 @@
         }
     }
     .gradiente_404{
-        width: $por-100;
         height: $por-30;
-        img{
-            width: $por-100;
-            height: $por-100;
-            
+        .gradiente_mobile{
+            display: none;
         }
     }
 }
@@ -43,10 +40,11 @@
             }
         }
         .gradiente_404{
-            width: $por-100;
-            height: $por-30;
-            img{
-                width: $por-100;
+            .gradiente_pc{
+                display: none;
+            }
+            .gradiente_mobile{
+                display: block;
             }
         } 
     }
