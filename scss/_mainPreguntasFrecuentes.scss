@@ -19,6 +19,9 @@
             border-bottom: map-get($colores , color-quinario ) solid $px-2;
             text-align: $center;
             padding-bottom: $px-40;
+            h2{
+                color: map-get($colores , color-terciario );
+            }
             p{
                 font-size:map-get($fuentes , fontLarger );
             }

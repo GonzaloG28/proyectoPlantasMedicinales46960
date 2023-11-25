@@ -1,7 +1,8 @@
 
 .main_plantas{
     .titulo_plantas{
-        @include titulos($center, $px-40, $px-20)
+        @include titulos($center, $px-40, $px-20);
+        color: map-get($colores , color-terciario );
     }
     .imagen_plantaPrincipal{
         width: $por-100;

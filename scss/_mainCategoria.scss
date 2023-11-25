@@ -2,7 +2,8 @@
 
 .main_categorias{
     .titulo_categorias{
-        @include titulos($center, $px-40, $px-20)
+        @include titulos($center, $px-40, $px-20);
+        color: map-get($colores , color-terciario );
     }
     .imagen_principal_categoria{
         width: $por-100;

@@ -45,6 +45,9 @@
             .descripcion_categorias{
                 margin-top: 200px;
                 text-align: $center;
+                h3{
+                    color: map-get($colores , color-terciario );
+                }
                 p{
                     font-size: map-get($fuentes , fontLarge );
                 }
@@ -87,6 +90,19 @@
     }
  }
 
+ @media (max-width: 1400px){
+    .main_inicio{
+        .contenedor_principal_categorias{
+            .contenedor_categorias_secundario{
+                .contenedor_categorias_imagenes{
+                    h4{
+                        font-size: map-get($fuentes , fontLarge );
+                    }
+                }
+            }
+        }
+    }
+ }
 
 @media (max-width: 992px){
     .main_inicio{
@@ -156,16 +172,18 @@
 
 
 @media (max-width: 700px){
-    .contenedor_categorias_secundario{
-        .contenedor_categorias_imagenes h4{
-            font-size: map-get($fuentes , fontSmall );
+    .main_inicio{
+        .contenedor_categorias_secundario{
+            .contenedor_categorias_imagenes h4{
+                font-size: map-get($fuentes , fontXsmall );
+            }
+        }
+        .contenedor_preguntas_inicio{
+            margin-top: $px-40;
+         p{
+            font-size:map-get($fuentes , fontSmall);
         }
     }
-    .main_inicio .contenedor_preguntas_inicio{
-        margin-top: $px-40;
-    }
-    .contenedor_preguntas_inicio p{
-        font-size:map-get($fuentes , fontSmall);
     }
 }
 

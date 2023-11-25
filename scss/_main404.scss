@@ -1,37 +1,53 @@
+
 .main_404{
-    height: 100vh;
-    display: flex;
+    height: 80vh;
     .contenedor_404{
-        width: 100%;
-        .contenedor_titulo_404{
-            height: $por-50;
-            width: $por-100;
+        height: 70%;
+        .contenedor_404_titulo{
+            height: $por-80;
             text-align: $center;
-            margin-top: $px-80;
-    
-            .boton_404{
-                margin-top: $px-20;
+            margin-top: $px-50;
+            .titulo_404{
+                img{
+                    margin-bottom: $px-50;
+                }
+                .boton_404{
                     background-color: map-get($colores , color-primario );
-                    &:hover{
-                        background-color:#2d6b22;
-                        color: map-get($colores , color-primario );
+                &:hover{
+                    background-color:#2d6b22;
+                    color: map-get($colores , color-primario );
                     }
                 }
             }
-            .imagen_404{
-                height: 50%;
-                width: 100%;
-             img{
-                height: 100%;
-                width: 40%;
-                object-fit: cover;
+        }
+    }
+    .gradiente_404{
+        width: $por-100;
+        height: $por-30;
+        img{
+            width: $por-100;
+            height: $por-100;
+            
+        }
+    }
+}
+
+
+
+@media (max-width: 490px) {
+    .main_404{
+        height: 85vh;
+        .contenedor_404{
+            .contenedor_404_titulo{
+                margin-top: $px-100;
             }
         }
-      }
+        .gradiente_404{
+            width: $por-100;
+            height: $por-30;
+            img{
+                width: $por-100;
+            }
+        } 
     }
-    @media (max-width: 991px){
-        .main_404{
-            flex-direction: column;
-            text-align: center;
-        }
-    }
+}
