@@ -1,6 +1,6 @@
 # 🌿 Proyecto Plantas Medicinales
 
-Este proyecto es una plataforma web informativa sobre plantas medicinales, diseñada para brindar detalles sobre sus propiedades y beneficios. Desarrollado con HTML, SCSS y JavaScript, el sitio ofrece una experiencia interactiva y moderna para los usuarios.
+Este proyecto es una plataforma web informativa sobre plantas medicinales, diseñada para brindar detalles sobre sus propiedades y beneficios. Desarrollado con HTML, SCSS y JavaScript, el sitio esta hecho con fines practicos.
 
 # Funcionalidades
 
